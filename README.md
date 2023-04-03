@@ -2,7 +2,7 @@
 
 **Versão macOS suportada**: 13 ou +
 <br>
-**Versão OpenCore**: 0.9.0
+**Versão OpenCore**: 0.9.1
 
 ## Especificações de hardware
 - Intel Core i5-6300U (Skylake)
@@ -26,3 +26,6 @@
 
 ## Obrigado/Créditos
 - [Opencore Team](https://dortania.github.io/getting-started/)
+- [OpenIntelWireless](https://github.com/OpenIntelWireless)
+- [Acidanthera](https://github.com/acidanthera)
+- [FireWolf](https://github.com/0xFireWolf/RealtekCardReader)
