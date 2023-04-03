@@ -2,9 +2,9 @@
 
 # Screenshots
 
-[Screenshots](/screenshots/01.png)
+![Screenshots](/screenshots/01.png)
 
-[Screenshots](/screenshots/02.png)
+![Screenshots](/screenshots/02.png)
 
 **Versão macOS suportada**: 13 ou +
 <br>
