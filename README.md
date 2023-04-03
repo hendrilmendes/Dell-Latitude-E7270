@@ -1,5 +1,11 @@
 # EFI para Hackintosh Dell Latitude E7270
 
+# Screenshots
+
+[Screenshots](/screenshots/01.png)
+
+[Screenshots](/screenshots/02.png)
+
 **Versão macOS suportada**: 13 ou +
 <br>
 **Versão OpenCore**: 0.9.1
