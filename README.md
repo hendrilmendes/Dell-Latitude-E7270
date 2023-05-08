@@ -1,22 +1,29 @@
-# EFI para Hackintosh Dell Latitude E7270
+## Screenshots
 
-# Screenshots
-
-![Screenshots](/screenshots/01.png)
-
-![Screenshots](/screenshots/02.png)
+<img src="screenshots/preview.png">
 
 **Versão macOS suportada**: 13 ou +
 <br>
-**Versão OpenCore**: 0.9.1
+**Versão OpenCore**: 0.9.2
+<br>
+**Data de Lançamento**:08/05/2023
 
 ## Especificações de hardware
-- Intel Core i5-6300U (Skylake)
-- Intel HD Graphics 520
-- Áudio: Realtek ALC293 (ALC3235)
-- Ethernet: Intel I219-LM PCI-E Gigabit Ethernet Adapter
-- WiFi: Intel Wireless Gigabit Ethernet 802.11AC (M.2, 8260AC)
-- Bluetooth: 4.1
+
+|Item|Descrição|
+|-|:-------:|
+|CPU|Intel Core i5-6300U (Skylake)|
+|Memória|8Gb DDR4|
+|Armazenamento|NVMe SanDisk 256Gb|
+|GPU|Intel(R) UHD Graphics 520|
+|Ethernet|Intel I219-LM PCI-E Gigabit Ethernet Adapter|
+|WLAN|Intel Wireless Gigabit Ethernet 802.11AC (M.2, 8260AC)|
+|Bluetooth|Intel Bluetooth(R) 4.1|
+|Áudio|Realtek ALC293 (ALC3235)|
+|Tela|12,5" 60Hz|
+|Webcam|USB Buil-in|
+|Leitor de Cartão|USB Built-in|
+|TouchPad & Teclado|HID I2C|
 
 ## O que esta funcionando?
 - WiFi
