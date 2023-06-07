@@ -1197,7 +1197,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Disabled</string>
+			<string>Default</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1325,7 +1325,7 @@
 				<key>boot-args</key>
 				<string>darkwake=0 keepsyms=1 debug=0x100 alcid=11 igfxonln=1</string>
 				<key>csr-active-config</key>
-				<data>dwgAAA==</data>
+				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<string>en-US:0</string>
 				<key>run-efi-updater</key>
@@ -1393,23 +1393,23 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02737207J9HWVP1F</string>
+			<string>C02801101QXJH4R1F</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>qLvPkR6y</data>
+			<data>pNGM3AvK</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Upgradable</string>
 			<key>SystemProductName</key>
-			<string>MacBookPro14,1</string>
+			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02VD6YLHV29</string>
+			<string>C02W20YLJHCC</string>
 			<key>SystemUUID</key>
-			<string>B1153B5A-35DF-44AA-A492-FEA515F6F562</string>
+			<string>65A2BAAA-5306-49AE-8979-963FC37D0C8D</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
