@@ -2,7 +2,7 @@
 
 <img src="screenshots/preview.png">
 
-**Versão macOS suportada**: 13.*, 14
+**Versão macOS suportada**: 13.* - 14.0
 <br>
 **Versão OpenCore**: 0.9.3
 <br>
