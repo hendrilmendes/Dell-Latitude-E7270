@@ -2,11 +2,11 @@
 
 <img src="screenshots/preview.png">
 
-**Versão macOS suportada**: 13 ou +
+**Versão macOS suportada**: 13.*, 14
 <br>
-**Versão OpenCore**: 0.9.2
+**Versão OpenCore**: 0.9.3
 <br>
-**Data de Lançamento**:08/05/2023
+**Data de Lançamento**: 12/06/2023
 
 ## Especificações de hardware
 
@@ -26,7 +26,6 @@
 |TouchPad & Teclado|HID I2C|
 
 ## O que esta funcionando?
-- WiFi
 - Audio
 - HDMI/DP
 - Todas as portas USB
@@ -35,7 +34,8 @@
 - Desligamento/reinicialização/atualização para versões mais recentes do macOS
 
 ## O que não esta funcionando?
-- Até o momento tudo parece funcionar
+- Wi-Fi
+- E necessário usar o HeliPort + itlwm (incluso nas Kexts) até que a correção do AirportItlwm seja liberada.
 
 ## Obrigado/Créditos
 - [Opencore Team](https://dortania.github.io/getting-started/)

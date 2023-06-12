@@ -507,7 +507,7 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>VoodooPS2Controller-SkyrilHD.kext</string>
+				<string>VoodooPS2Controller.kext</string>
 				<key>Comment</key>
 				<string>Alps by SkyrilHD</string>
 				<key>Enabled</key>
@@ -525,7 +525,7 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>VoodooPS2Controller-SkyrilHD.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
+				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -543,7 +543,7 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>VoodooPS2Controller-SkyrilHD.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
+				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -561,7 +561,7 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>VoodooPS2Controller-SkyrilHD.kext/Contents/PlugIns/VoodooInput.kext</string>
+				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -579,13 +579,13 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>AirportItlwm_ventura.kext</string>
+				<string>itlwm.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirportItlwm</string>
+				<string>Contents/MacOS/itlwm</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1749,6 +1749,8 @@
 		<dict>
 			<key>ClearScreenOnModeSwitch</key>
 			<false/>
+			<key>ConsoleFont</key>
+			<string></string>
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>DirectGopRendering</key>
@@ -1817,6 +1819,8 @@
 			<key>HashServices</key>
 			<false/>
 			<key>OSInfo</key>
+			<false/>
+			<key>PciIo</key>
 			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
