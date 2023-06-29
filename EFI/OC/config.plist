@@ -1111,6 +1111,8 @@
 			<false/>
 			<key>HideAuxiliary</key>
 			<true/>
+			<key>InstanceIdentifier</key>
+			<string></string>
 			<key>LauncherPath</key>
 			<string>Default</string>
 			<key>PickerAttributes</key>
@@ -1393,23 +1395,23 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02801101QXJH4R1F</string>
+			<string>C02032600J9P8PG1F</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>pNGM3AvK</data>
+			<data>JFunBlFr</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Upgradable</string>
 			<key>SystemProductName</key>
-			<string>MacBookPro15,2</string>
+			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02W20YLJHCC</string>
+			<string>C02D60G0ML7H</string>
 			<key>SystemUUID</key>
-			<string>65A2BAAA-5306-49AE-8979-963FC37D0C8D</string>
+			<string>33D0CEAB-BB63-4C18-9844-17D0E18D3AEF</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1531,7 +1533,7 @@
 				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
-				<string>HfsPlus.efi</string>
+				<string>OpenHfsPlus.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
