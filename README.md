@@ -2,11 +2,11 @@
 
 <img src="screenshots/preview.png">
 
-**Versão macOS suportada**: 13.* - 14.0
+**Versão macOS suportada**: 14.0
 <br>
 **Versão OpenCore**: 0.9.4 Preview
 <br>
-**Data de Lançamento**: 29/06/2023
+**Data de Lançamento**: 01/07/2023
 
 ## Especificações de hardware
 
