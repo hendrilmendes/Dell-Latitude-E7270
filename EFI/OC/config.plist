@@ -76,7 +76,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>AAA=</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -649,7 +649,7 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
-				<string></string>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>FeatureUnlock.kext</string>
 				<key>Comment</key>
@@ -667,7 +667,7 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
-				<string></string>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>ECEnabler.kext</string>
 				<key>Comment</key>
@@ -676,6 +676,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/ECEnabler</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>NVMeFix.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/NVMeFix</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1082,10 +1100,10 @@
 			<false/>
 			<key>AppleXcpmForceBoost</key>
 			<false/>
-			<key>CustomPciSerialDevice</key>
-			<false/>
 			<key>CustomSMBIOSGuid</key>
 			<true/>
+			<key>CustomPciSerialDevice</key>
+			<false/>
 			<key>DisableIoMapper</key>
 			<true/>
 			<key>DisableIoMapperMapping</key>
@@ -1149,6 +1167,8 @@
 			<true/>
 			<key>InstanceIdentifier</key>
 			<string></string>
+			<key>LauncherOption</key>
+			<string>Disabled</string>
 			<key>LauncherPath</key>
 			<string>Default</string>
 			<key>PickerAttributes</key>
@@ -1157,16 +1177,14 @@
 			<false/>
 			<key>PickerMode</key>
 			<string>External</string>
+			<key>PickerVariant</key>
+			<string>Acidanthera\GoldenGate</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
 			<false/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
-			<key>LauncherOption</key>
-			<string>Disabled</string>
-			<key>PickerVariant</key>
-			<string>Acidanthera\GoldenGate</string>
 			<key>Timeout</key>
 			<integer>3</integer>
 		</dict>
@@ -1241,6 +1259,33 @@
 		</dict>
 		<key>Serial</key>
 		<dict>
+			<key>Custom</key>
+			<dict>
+				<key>BaudRate</key>
+				<integer>115200</integer>
+				<key>ClockRate</key>
+				<integer>1843200</integer>
+				<key>DetectCable</key>
+				<false/>
+				<key>ExtendedTxFifoSize</key>
+				<integer>64</integer>
+				<key>FifoControl</key>
+				<integer>7</integer>
+				<key>LineControl</key>
+				<integer>7</integer>
+				<key>PciDeviceInfo</key>
+				<data>/w==</data>
+				<key>RegisterAccessWidth</key>
+				<integer>8</integer>
+				<key>RegisterBase</key>
+				<integer>1016</integer>
+				<key>RegisterStride</key>
+				<integer>1</integer>
+				<key>UseHardwareFlowControl</key>
+				<false/>
+				<key>UseMmio</key>
+				<false/>
+			</dict>
 			<key>Init</key>
 			<false/>
 			<key>Override</key>
@@ -1389,6 +1434,8 @@
 		</dict>
 		<key>LegacyOverwrite</key>
 		<false/>
+		<key>WriteFlash</key>
+		<true/>
 		<key>LegacySchema</key>
 		<dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
@@ -1417,8 +1464,6 @@
 				<string>BootOrder</string>
 			</array>
 		</dict>
-		<key>WriteFlash</key>
-		<true/>
 	</dict>
 	<key>PlatformInfo</key>
 	<dict>
@@ -1430,10 +1475,10 @@
 		<dict>
 			<key>AdviseFeatures</key>
 			<false/>
-			<key>MLB</key>
-			<string>C02032600J9P8PG1F</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
+			<key>MLB</key>
+			<string>C02032600J9P8PG1F</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1489,22 +1534,22 @@
 			<integer>50</integer>
 			<key>KeySubsequentDelay</key>
 			<integer>5</integer>
-			<key>PointerPollMask</key>
-			<integer>-1</integer>
-			<key>PointerPollMax</key>
-			<integer>80</integer>
-			<key>PointerPollMin</key>
-			<integer>10</integer>
-			<key>PointerSpeedDiv</key>
-			<integer>1</integer>
-			<key>PointerSpeedMul</key>
-			<integer>1</integer>
 			<key>PointerDwellClickTimeout</key>
 			<integer>0</integer>
 			<key>PointerDwellDoubleClickTimeout</key>
 			<integer>0</integer>
 			<key>PointerDwellRadius</key>
 			<integer>0</integer>
+			<key>PointerPollMask</key>
+			<integer>-1</integer>
+			<key>PointerPollMin</key>
+			<integer>10</integer>
+			<key>PointerPollMax</key>
+			<integer>80</integer>
+			<key>PointerSpeedDiv</key>
+			<integer>1</integer>
+			<key>PointerSpeedMul</key>
+			<integer>1</integer>
 		</dict>
 		<key>Audio</key>
 		<dict>
@@ -1817,10 +1862,10 @@
 			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
-			<key>UIScale</key>
-			<integer>0</integer>
 			<key>UgaPassThrough</key>
 			<false/>
+			<key>UIScale</key>
+			<integer>0</integer>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>

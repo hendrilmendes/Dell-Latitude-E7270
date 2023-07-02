@@ -1,20 +1,21 @@
 ## Screenshots
 
 <img src="screenshots/preview.png">
+<img align="center" src="screenshots/preview2.png">
 
-**Versão macOS suportada**: 14.0
+**Versão macOS suportada**: 13.* - 14.0
 <br>
-**Versão OpenCore**: 0.9.4 Preview
+**Versão OpenCore**: 0.9.4 (Preview)
 <br>
-**Data de Lançamento**: 01/07/2023
+**Data de Lançamento**: 02/07/2023
 
-## Especificações de hardware
+## Especificações de Hardware
 
-|Item|Descrição|
+|Itens|Descrição|
 |-|:-------:|
 |CPU|Intel Core i5-6300U (Skylake)|
-|Memória|8Gb DDR4|
-|Armazenamento|NVMe SanDisk 256Gb|
+|Memória|8GB DDR4|
+|Armazenamento|NVMe SanDisk x400 256GB|
 |GPU|Intel(R) UHD Graphics 520|
 |Ethernet|Intel I219-LM PCI-E Gigabit Ethernet Adapter|
 |WLAN|Intel Wireless Gigabit Ethernet 802.11AC (M.2, 8260AC)|
@@ -26,16 +27,17 @@
 |TouchPad & Teclado|HID I2C|
 
 ## O que esta funcionando?
-- Audio
+- Áudio
 - HDMI/DP
-- Todas as portas USB
 - Ethernet
+- Bluetooth (Ainda de forma instável)
+- Webcam
+- Todas as portas USB
 - Tudo relacionado ao iCloud (Drive, iMessage, Facetime, etc)
-- Desligamento/reinicialização/atualização para versões mais recentes do macOS
 
 ## O que não esta funcionando?
-- Wi-Fi
-- E necessário usar o HeliPort + itlwm (incluso nas Kexts) até que a correção do AirportItlwm seja liberada.
+- Wi-Fi <br>
+E necessário usar o HeliPort + itlwm (incluso nas Kexts) até que a correção do AirportItlwm seja liberada.
 
 ## Obrigado/Créditos
 - [Opencore Team](https://dortania.github.io/getting-started/)
