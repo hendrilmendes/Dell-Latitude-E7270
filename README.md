@@ -3,11 +3,11 @@
 <img src="screenshots/preview.png">
 <img align="center" src="screenshots/preview2.png">
 
-**Versão macOS suportada**: 13.* - 14.0
+**Versão macOS suportada**: 13.0 - 14.0
 <br>
 **Versão OpenCore**: 0.9.4 (Preview)
 <br>
-**Data de Lançamento**: 02/07/2023
+**Data de Lançamento**: 04/07/2023
 
 ## Especificações de Hardware
 
@@ -27,6 +27,7 @@
 |TouchPad & Teclado|HID I2C|
 
 ## O que esta funcionando?
+- WiFI
 - Áudio
 - HDMI/DP
 - Ethernet
@@ -36,8 +37,7 @@
 - Tudo relacionado ao iCloud (Drive, iMessage, Facetime, etc)
 
 ## O que não esta funcionando?
-- Wi-Fi <br>
-E necessário usar o HeliPort + itlwm (incluso nas Kexts) até que a correção do AirportItlwm seja liberada.
+Até o momento tudo funcionando
 
 ## Obrigado/Créditos
 - [Opencore Team](https://dortania.github.io/getting-started/)
