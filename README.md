@@ -7,7 +7,7 @@
 <br>
 **Versão OpenCore**: 0.9.4 (Preview)
 <br>
-**Data de Lançamento**: 04/07/2023
+**Data de Lançamento**: 13/07/2023
 
 ## Especificações de Hardware
 

@@ -8,11 +8,28 @@ Changelog EFI
 - Allowed `.contentVisibility` in same boot FS root locations as `.VolumeIcon.icns`, in order to survive macOS updates
 - Fixed incorrect core count on Silvermont Atom/Celeron processors
 - Fixed PM timer detection on Silvermont Atom/Celeron processors for TSC calculations
+- Fixed PM timer detection on non-Intel chipsets when booted through OpenDuet
+- Fixed FadtEnableReset on NVIDIA nForce chipset platforms
+
+
+#### AirportItlwm v2.3.0 (Preview)
+- Implementado no config.plist
+
+#### AppleALC v1.8.4
+
+-Added ALC262 layout-id 14 for Dell Studio One 19 1909 by Goldfish64
+
+#### Lilu v1.6.7
+
+- Added Broadwell-EP CPU model
+- Added Raptor Lake C0 stepping model
 
 #### FeatureUnlock
 - Implementado no config.plist
 
 #### NVMeFIX
+- Added constants for macOS 14 support
+- ceFixed macOS 14 compatibility
 - Implementado no config.plist
 
 #### ECEnabler
