@@ -1,4 +1,5 @@
 Changelog EFI
+
 ======================================================
 #### OpenCore v0.9.4 (Preview)
 - Fixed kext blocker `Exclude` strategy for prelinked on 32-bit versions of macOS
@@ -9,31 +10,30 @@ Changelog EFI
 - Fixed incorrect core count on Silvermont Atom/Celeron processors
 - Fixed PM timer detection on Silvermont Atom/Celeron processors for TSC calculations
 - Fixed PM timer detection on non-Intel chipsets when booted through OpenDuet
-- Fixed FadtEnableReset on NVIDIA nForce chipset platforms
+- Fixed `FadtEnableReset` on NVIDIA nForce chipset platforms
 
 
 #### AirportItlwm v2.3.0 (Preview)
 - Implementado no config.plist
 
 #### AppleALC v1.8.4
-
 -Added ALC262 layout-id 14 for Dell Studio One 19 1909 by Goldfish64
 
-#### Lilu v1.6.7
+#### ECEnabler v1.0.5
+- Implementado no config.plist
 
+#### Lilu v1.6.7
 - Added Broadwell-EP CPU model
 - Added Raptor Lake C0 stepping model
 
-#### FeatureUnlock
-- Implementado no config.plist
-
-#### NVMeFIX
+#### NVMeFIX v1.1.1
 - Added constants for macOS 14 support
 - ceFixed macOS 14 compatibility
 - Implementado no config.plist
 
-#### ECEnabler
-- Implementado no config.plist
+#### WhateverGreen v1.6.6
+- Extended the Backlight Registers Alternative Fix (BLT) submodule to support both KBL and CFL platforms. (by @0xFireWolf)
+- Revised the Backlight Registers Fix (BLR) submodule to make it compatible with the Backlight Smoother (BLS) on KBL platforms. (by @0xFireWolf)
 
 ======================================================
 #### OpenCore v0.9.3

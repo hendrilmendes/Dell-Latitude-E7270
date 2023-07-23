@@ -7,7 +7,7 @@
 <br>
 **Versão OpenCore**: 0.9.4 (Preview)
 <br>
-**Data de Lançamento**: 13/07/2023
+**Data de Lançamento**: 23/07/2023
 
 ## Especificações de Hardware
 
@@ -31,7 +31,7 @@
 - Áudio
 - HDMI/DP
 - Ethernet
-- Bluetooth (Ainda de forma instável)
+- Bluetooth
 - Webcam
 - Todas as portas USB
 - Tudo relacionado ao iCloud (Drive, iMessage, Facetime, etc)
