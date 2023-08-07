@@ -11,13 +11,22 @@ Changelog EFI
 - Fixed PM timer detection on Silvermont Atom/Celeron processors for TSC calculations
 - Fixed PM timer detection on non-Intel chipsets when booted through OpenDuet
 - Fixed `FadtEnableReset` on NVIDIA nForce chipset platforms
-
+- Added BlockIoDxe alternative OpenDuet variant
+- Added support for ATI cards when using `ForceResolution` option
 
 #### AirportItlwm v2.3.0 (Preview)
 - Implementado no config.plist
 
 #### AppleALC v1.8.4
--Added ALC262 layout-id 14 for Dell Studio One 19 1909 by Goldfish64
+- Added ALC262 layout-id 14 for Dell Studio One 19 1909 by Goldfish64
+- Headphones Fix ALC255 layout-id 69 by juniorcaesar 
+- Added ALC289 layout-id 33 for Asus ROG Zephyrus G14 GA401IV & fix layout-id 93 in xml
+- Added Conexant CX20632 layout-id 21 for Axioo MyPC One Pro H5 by Andres ZeroCross
+- Added ALC257 layout-id 101 for Lenovo XiaoXin Air14ALC by htmambo
+- Added ALC236 layout-id 19 for Lenovo IdeaPad 500-14ISK. Enables Internal Speakers, Internal Mic, Jack Microphone and Jack Headphones by wolf606
+- Added ALC289 layout-id 12 for XPS 13 9300 with working headphones and external microphone by wern-apfel
+- Added ALC269 layout-id 38 for Fujitsu Esprimo D552 by jayveeballesteros
+- Fix no sound after sleep/wake for ALC891 layout 11 by portrayer
 
 #### ECEnabler v1.0.5
 - Implementado no config.plist
@@ -28,7 +37,7 @@ Changelog EFI
 
 #### NVMeFIX v1.1.1
 - Added constants for macOS 14 support
-- ceFixed macOS 14 compatibility
+- Fixed macOS 14 compatibility
 - Implementado no config.plist
 
 #### WhateverGreen v1.6.6
