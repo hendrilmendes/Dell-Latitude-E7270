@@ -1,7 +1,7 @@
 Changelog EFI
 
 ======================================================
-#### OpenCore v0.9.4 (Preview)
+#### OpenCore v0.9.4
 - Fixed kext blocker `Exclude` strategy for prelinked on 32-bit versions of macOS
 - Fixed `ForceAquantiaEthernet` quirk on macOS 14 beta 2, thx @Shikumo
 - Added `InstanceIdentifier` to OpenCore and option to target `.contentVisibility` to specific instances (thx @dakanji)
@@ -14,7 +14,7 @@ Changelog EFI
 - Added BlockIoDxe alternative OpenDuet variant
 - Added support for ATI cards when using `ForceResolution` option
 
-#### AirportItlwm v2.3.0 (Preview)
+#### AirportItlwm v2.3.0 - 09/08/2023
 - Implementado no config.plist
 
 #### AppleALC v1.8.4
