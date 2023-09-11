@@ -1,6 +1,21 @@
 Changelog EFI
 
 ======================================================
+#### OpenCore v0.9.5
+- Fixed GUID formatting for legacy NVRAM saving
+- Fixed inability to open files in root directory on an NTFS filesystem
+- Fixed hang while unloading NTFS driver
+- Added UEFI quirk ShimRetainProtocol, allowing OpenCore chained from shim to verify Linux using shim's certificates
+- Added OpenLegacyBoot driver for supporting legacy OS booting
+- Added shim-make.tool to download and build rhboot/shim, for Linux SBAT and MOK integration
+
+#### AppleALC v1.8.5
+
+- Added AD1884 layout-id 11 for Panasonic Toughbook CF-30 by Goldfish64
+- Added ALC897 layout-id 99 for HUANANZHI QD4 by vinitosh
+- Added ALC897 layout-id 99 for MSI PRO B760M-P by liangyi9812
+
+======================================================
 #### OpenCore v0.9.4
 - Fixed kext blocker `Exclude` strategy for prelinked on 32-bit versions of macOS
 - Fixed `ForceAquantiaEthernet` quirk on macOS 14 beta 2, thx @Shikumo

@@ -1940,6 +1940,8 @@
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
 			<false/>
+			<key>ShimRetainProtocol</key>
+			<false/>
 		</dict>
 		<key>ReservedMemory</key>
 		<array>
