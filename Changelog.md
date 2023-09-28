@@ -1,6 +1,11 @@
 Changelog EFI
 
 ======================================================
+#### OpenCore v0.9.6
+- OpenCore 0.9.6 Preview
+
+
+======================================================
 #### OpenCore v0.9.5
 - Fixed GUID formatting for legacy NVRAM saving
 - Fixed inability to open files in root directory on an NTFS filesystem

@@ -4,9 +4,9 @@
 
 **Versão macOS suportada**: 13.0 - 14.0
 <br>
-**Versão OpenCore**: 0.9.5
+**Versão OpenCore**: 0.9.6 (Preview)
 <br>
-**Data de Lançamento**: 11/09/2023
+**Data de Lançamento**: 28/09/2023
 
 ## Especificações de Hardware
 
