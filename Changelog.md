@@ -2,14 +2,15 @@ Changelog EFI
 
 ======================================================
 #### OpenCore v0.9.6
-- OpenCore 0.9.6 Preview
+- Updated builtin firmware versions for SMBIOS and the rest
+- Fixed hang while generating boot entries on some systems
+- Added `efidebug.tool` support for 32-bit on 32-bit using GDB or LLDB
+- Fixed potential incorrect values in kernel image capabilities calculation
+- Added `FixupAppleEfiImages` quirk to allow booting Mac OS X 10.4 and 10.5 boot.efi images on modern secure image loaders
 
-#### AppleALC v1.8.6
-- Fixed layout55 ALC236 for HP240G8 by 8DireZ3
-- Added ALC269 layout-id 138 for Lenovo G480 by aa820t
-- Added ALC289 layout-id 69 for Dell ICL XPS 2in1 7390 by Vorshim92
-- Added ALC236 layout-id 69 for Dell Vostro 5401 ICL by Vorshim92
-- Added ALC269 layout-id 36 for Samsung R780 by wern-apfel
+#### AppleALC v1.8.7
+- Added IDT 92HD81B1X5 layout-ID 76 for HP Elitebook 8x70 series by SkyrilHD
+- Fixed ALC256 layout-ID 68  for NUC 9 by littlesum 
 
 ======================================================
 #### OpenCore v0.9.5
