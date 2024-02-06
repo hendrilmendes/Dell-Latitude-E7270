@@ -1,6 +1,36 @@
 Changelog EFI
 
 ======================================================
+#### OpenCore v0.9.8
+- Updated OpenDuet to allow loading unsigned, unaligned legacy Apple images such as HfsPlusLegacy.efi
+- Fixed CPU frequency calculation on AMD 10h family
+- Swapped the position of Shutdown and Restart buttons to better match recent macOS
+- Added `OC_ATTR_USE_REVERSED_UI` to allow access to previous default Shutdown and Restart button arrangement
+- Fixed intro animation getting stuck in OpenCanopy if an entry which returns to menu is selected before animation ends
+- Modified OpenCanopy to require presence of label images only when used due to `OC_ATTR_USE_GENERIC_LABEL_IMAGE`
+- Provided `OC_ATTR_REDUCE_MOTION` to optionally disable non-required OpenCanopy menu animations
+- Modified NVRAM logout hook to handle XML entities in string vars
+- Fixed CPU frequency calculation on AMD 0Fh family
+- Added kext blocker `Exclude` strategy for mkext
+- Re-enabled AudioDxe failover to protocol GET mode for systems such as Acer E5 where it works when DisconnectHda doesn't
+- Added `FirmwareSettingsEntry.efi` driver which adds menu entry to reboot into UEFI firmware settings
+- Enabled use of picker shortcut keys which are read out in OpenCanopy when using `PickerAudioAssist`
+- Modified builtin picker so as not to respond to keys queued while audio assist menu is being read out
+- Fixed Linux EFI stub loading error when using OpenDuet since 0.8.8
+- Fixed APFS JumpStart with OpenDuet and `SecureBootModel` `Disabled`
+- Added TSC frequency calculation for xen hypervisor, thx @netanelc305
+- Supported additional early Nvidia UEFI VBIOS in `EnableGop` `vBiosInsert.sh`
+
+#### AppleALC v1.8.9
+- Added ALC255 layout-id 80 for Acer Aspire 7 A715-42G AMD by Long5436
+- Added ALC256 layout-id 38 for Samsung Galaxy Book NT750XDA-KF59U by lshbluesky
+- Added ALC289 layout-id 13 for XPS 15 9500 with 4 speakers by wern-apfel
+- Added ALC892 layout-id 11 for MSI GF72-8RE by wern-apfel
+- Added ALC287 layout-id 13 for Legion 5 Pro (R9000p) by isKoi
+- Added ALCS1220A layout-id 99 for MSI X470 Gaming Pro Carbon MS-7B78 by hoangtu92
+- Added ALC286 layout-id 69 for HP Pavilion Wave 600 A058cn by R-a-s-c-a-l
+
+======================================================
 #### OpenCore v0.9.7
 - Updated recovery_urls.txt
 - Changed OpenDuet to enforce `W^X` settings rather than fixing them in loaded images
