@@ -1366,6 +1366,7 @@ class ProperTree:
                 existing_window = next((window for window in windows if not window in self.default_windows and window.current_plist==arg),None)
                 if existing_window:
                     self.lift_window(existing_window)
+                    existing_window.reload_from_disk(None)
                     continue
                 if len(windows) == 1 and windows[0] == self.start_window and windows[0].edited == False and windows[0].current_plist == None:
                     # Fresh window - replace the contents
@@ -1611,6 +1612,9 @@ class ProperTree:
         if window in self.default_windows:
             self.creating_window = False
             return
+        # Ensure the title is unique
+        title = self._get_unique_title(title="Untitled.plist")
+        # Get the info from the current window and create a new one
         plist_data = window.nodes_to_values()
         new_window = plistwindow.PlistWindow(self, self.tk)
         # Ensure the window titlebar color is updated
@@ -1620,9 +1624,13 @@ class ProperTree:
         new_window.data_type_string.set(window.data_type_string.get())
         new_window.int_type_string.set(window.int_type_string.get())
         new_window.bool_type_string.set(window.bool_type_string.get())
-        # Populate the new window with the plist data - but no file path
-        # ensuring it remains "edited"
-        new_window.open_plist(None,plist_data,auto_expand=self.settings.get("expand_all_items_on_open",True))
+        # Populate the new window with the plist data - ensuring it's "edited"
+        new_window.open_plist(
+            None,
+            plist_data,
+            auto_expand=self.settings.get("expand_all_items_on_open",True),
+            title=title
+        )
         # Update the Open Recent menu
         if str(sys.platform) != "darwin": self.update_recents_for_target(new_window)
         self.lift_window(new_window)
@@ -1673,23 +1681,39 @@ class ProperTree:
         if window in self.default_windows:
             return
         window.reundo(event,False)
+
+    def _get_unique_title(self, title="Untitled.plist", suffix=""):
+        # Let's try to create a unique name (if Untitled.plist is used, add a number)
+        if "." in title:
+            # Consider an extension - and keep the leading period
+            final_title = ".".join(title.split(".")[:-1])
+            ext = "."+title.split(".")[-1]
+        else:
+            # No extension - just use the title as-is
+            final_title = title
+            ext = ""
+        titles = set([x.title().lower() for x in self.stackorder(self.tk)])
+        number = 0
+        while True:
+            temp = "{}{}{}{}".format(
+                final_title,
+                suffix,
+                "" if number == 0 else "-"+str(number),
+                ext)
+            temp_edit = temp + " - edited"
+            temp_lower,temp_edit_lower = temp.lower(),temp_edit.lower()
+            if not any((x in titles for x in (temp_lower,temp_edit_lower))):
+                final_title = temp
+                break
+            number += 1
+        return final_title
     
     def new_plist(self, event = None):
         if self.creating_window:
             return
         self.creating_window = True
         # Creates a new plistwindow object
-        # Let's try to create a unique name (if Untitled.plist is used, add a number)
-        titles = [x.title().lower() for x in self.stackorder(self.tk)]
-        number = 0
-        final_title = "Untitled.plist"
-        while True:
-            temp = "untitled{}.plist".format("" if number == 0 else "-"+str(number))
-            temp_edit = temp + " - edited"
-            if not any((x in titles for x in (temp,temp_edit))):
-                final_title = temp
-                break
-            number += 1
+        title = self._get_unique_title(title="Untitled.plist")
         window = plistwindow.PlistWindow(self, self.tk)
         # Update the Open Recent menu
         if str(sys.platform) != "darwin": self.update_recents_for_target(window)
@@ -1700,7 +1724,7 @@ class ProperTree:
         window.data_type_string.set(self.data_type_string.get())
         window.int_type_string.set(self.int_type_string.get())
         window.bool_type_string.set(self.bool_type_string.get())
-        window.open_plist(final_title.capitalize(),{}) # Created an empty root
+        window.open_plist(title,{}) # Created an empty root
         window.current_plist = None # Ensure it's initialized as new
         self.lift_window(window)
         self.creating_window = False
@@ -1728,8 +1752,9 @@ class ProperTree:
         for window in windows[::-1]:
             if window in self.default_windows: continue
             if window.current_plist == path:
-                # found one - just make this focus instead
+                # found one - just lift it and reload from disk instead
                 self.lift_window(window)
+                window.reload_from_disk(None)
                 return
         return self.open_plist_with_path(None,path,current_window)
 
@@ -1756,7 +1781,12 @@ class ProperTree:
         current_window.data_type_string.set(self.data_type_string.get())
         current_window.int_type_string.set(self.int_type_string.get())
         current_window.bool_type_string.set(self.bool_type_string.get())
-        current_window.open_plist(path,plist_data,plist_type,self.settings.get("expand_all_items_on_open",True))
+        current_window.open_plist(
+            path,
+            plist_data,
+            plist_type=plist_type,
+            auto_expand=self.settings.get("expand_all_items_on_open",True)
+        )
         self.lift_window(current_window)
         # Add it to our Open Recent list
         self.add_recent(path)
