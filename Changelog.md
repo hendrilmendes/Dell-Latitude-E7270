@@ -1,6 +1,18 @@
 Changelog EFI
 
 ======================================================
+#### OpenCore  v1.0.3
+- Fixed support for `AMD_CPU_EXT_FAMILY_1AH`, thx @Shaneee
+- Fixed EHCI handoff logic in OpenDuet, causing older machines to hang at start
+- Added Arrow Lake CPU detection
+- Fixed Raptor Lake CPU detection
+- Supported booting with TuneD in Fedora 41 in OpenLinuxBoot
+- Fixed failure of vault `sign.command` to insert signature in correct location in some circumstances
+- Added OpenNetworkBoot driver to support HTTP(S) and PXE boot
+- Supported DMG loading and verification (e.g. macOS Recovery) over HTTP(S) boot
+
+
+======================================================
 #### OpenCore  v1.0.1
 - Updated code and added progress bar to macrecovery, thx @soyeonswife63
 - Bundled fat binary i386/x64 10.6+ compatible `nvramdump` with LogoutHook release
