@@ -2,18 +2,18 @@
 
 <img align="center" src="screenshots/preview.png">
 
-**Versão macOS suportada**: 13.0 ou +
+**Versão macOS suportada**: Ventura, Sonoma, Sequoia e Tahoe
 <br>
-**Versão OpenCore**: 1.0.3
+**Versão OpenCore**: 1.0.6
 <br>
-**Data de Lançamento**: 07/01/2025
+**Data de Lançamento**: 14/12/2025
 
 ## Especificações de Hardware
 
 |Itens|Descrição|
 |-|:-------:|
 |CPU|Intel Core i5-6300U (Skylake)|
-|Memória|8GB DDR4|
+|Memória|12GB DDR4|
 |Armazenamento|NVMe SanDisk x400 256GB|
 |GPU|Intel(R) UHD Graphics 520|
 |Ethernet|Intel I219-LM PCI-E Gigabit Ethernet Adapter|
